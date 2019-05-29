@@ -47,7 +47,7 @@ export const formNext = (options = {}, cb = () => null) => {
 
   if (next && next.nodeType === 1) {
     // 自定义的select, combobox特殊处理
-    if (next.className.indexOf('seenew-select-input') > -1) {
+    if (next.className.indexOf('pro-select-input') > -1) {
       next.click();
     }
     next.focus();
@@ -64,7 +64,7 @@ export const formNext = (options = {}, cb = () => null) => {
   eles.forEach((item, i) => {
     if (setpNum === 0 && (item === current || item === active) && eles[i + 1]) {
       // 自定义的select, combobox特殊处理
-      if (eles[i + 1].className.indexOf('seenew-select-input') > -1) {
+      if (eles[i + 1].className.indexOf('pro-select-input') > -1) {
         eles[i + 1].click();
       }
       eles[i + 1].focus();
